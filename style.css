@@ -1,0 +1,245 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #121212, #1f4037, #99f2c8);
+  background-size: 300% 300%;
+  color: #f1f1f1;
+  transition: all 0.4s ease;
+  animation: gradientShift 12s ease infinite;
+}
+
+/* Gradient Background Animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+a { text-decoration: none; }
+
+
+
+/* =========================
+   LIGHT THEME
+========================= */
+body.light-theme {
+  background: linear-gradient(135deg, #ff6e6e, #ffffff, hsl(0, 19%, 57%));
+  background-size: 300% 300%;
+  color: #000000;
+  animation: gradientShift 15s ease infinite;
+}
+body.light-theme .navbar {
+  background: #000000 !important;
+  color: #000000;
+}
+body.light-theme .card {
+  background: #000000;
+  color: #000000;
+}
+body.light-theme footer {
+  background: #ffffff;
+  color: #121212;
+}
+body.light-theme .btn-outline-light {
+  color: #fff5f5;
+  background-color: #000000;
+  border-color: #000000;
+}
+body.light-theme .btn-outline-light:hover {
+  background: #7e7e7e;
+  color: #ffffff;
+}
+body.light.theme.text-centers {
+  color: #000000;
+}
+.text-center{
+  color:#000000
+}
+.text-centers{
+  color:#000000
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background: linear-gradient(135deg, #58b367, #1e8449);
+  transition: background 0.4s;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: 700;
+  left: 20px;
+  font-style:normal;
+}
+.nav-link {
+  color: #ffffff !important;
+  margin: 0 10px;
+  position: relative;
+  transition: 0.3s;
+}
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+  margin: auto;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:black;
+  text-align: center;
+}
+
+/* Floating background circles */
+.hero::before, .hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  color:#000000;
+  animation: float 12s infinite linear;
+}
+.hero::before {
+  width: 400px; height: 400px;
+  top: -100px; left: -150px;
+}
+.hero::after {
+  width: 300px; height: 300px;
+  bottom: -100px; right: -150px;
+}
+@keyframes float {
+  0% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-40px) rotate(180deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+*lead {
+  font-size: 1.2rem;
+  color: #000000;
+}
+.body.light.theme-toggle.lead{
+  color:#000000;
+}
+/* Profile Image */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.6);
+}
+
+/* =========================
+   TIMELINE
+========================= */
+.timeline .timeline-item {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  backdrop-filter: blur(6px);
+  color: #000000;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.timeline .timeline-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+body.light-theme .timeline .timeline-item {
+  background: #fff;
+  color: #121212;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+  border: none;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}
+body.light-theme .card {
+  background: #f9f9f9;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: linear-gradient(135deg, #58b367, #1e8449);
+  color: #fff;
+  
+  padding: 15px 0;
+  transition: background 0.4s, color 0.4s;
+}
+body.light-theme footer {
+  background: #f8f9fa;
+  color: #121212;
+}
+
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
+
+#theme-btn {
+  border-radius: 50%;
+  padding: 10px 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.theme-toggle {
+  position: fixed;
+  top: 4px;
+  left: 20px;  /* instead of left */
+  z-index: 1300; /* higher than navbar */
+}
+@media (max-width: 768px) {
+  .theme-toggle {
+    top: 8Px;   /* Move it below navbar */
+    right:15px; /* Adjust horizontal spacing */
+    transform: scale(0.9); /* Make icon a little smaller */
+  }
+
+  #theme-btn {
+     background: #ffffff;
+     color: #ffffff;
+     font-size: 14px;   /* slightly smaller icon size */
+  }
+}

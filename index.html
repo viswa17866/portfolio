@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viswa N - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Theme Switch Button -->
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+        <div class="theme-toggle">
+  <button id="theme-btn" class="btn btn-outline-light"><i class="bi bi-brightness-high"></i></button>
+</div>
+    <a class="navbar-brand fw-bold" href="#">Viswa N</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center text-center">
+  <div class="container" data-aos="fade-down">
+    
+    <!-- Profile Image -->
+    <img src="assests/viswaa-removebg-preview.jpg" alt="Viswa N" class="profile-img mb-3">
+    
+    <h1 class="display-4 fw-bold">Hi, I'm Viswa 👋</h1>
+    <p class="lead">B.Tech IT Student | Java Developer | Web Developer</p>
+    <div class="mt-4">
+      <a href="#projects" class="btn btn-primary btn-lg me-2">View Projects</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Hire Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4 text-center">About Me</h2>
+    <p class="text-centers">A passionate and dedicated B.Tech Information Technology student with strong foundational knowledge in Core Java and Web Development. Seeking a Java Developer role to contribute technical skills and gain hands-on experience in software development within a dynamic organization.</p>
+  </div>
+</section>
+  
+<!-- Experience -->
+<section id="experience" class="py-5 alt-bg">
+  <div class="container" data-aos="fade-right">
+    <h2 class="mb-4 text-center">Work Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item card shadow" data-aos="zoom-in">
+        <h5>Full Stack Web Development Intern</h5>
+        <p>Learned HTML, CSS, JS, Python, Flask. Built projects and collaborated in teams.</p>
+      </div>
+      <div class="timeline-item card shadow" data-aos="zoom-in">
+        <h5>Intermediate Java Intern - HTGE Technologies</h5>
+        <p>Completed core and intermediate Java tasks, gained OOPs experience.</p>
+      </div>
+      <div class="timeline-item card shadow" data-aos="zoom-in">
+        <h5>Cloud Club Organizer</h5>
+        <p>Organized technical sessions, guided students in cloud concepts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-5">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4 text-center">Academic Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-6" data-aos="flip-left">
+        <div class="card h-100 shadow hover-card">
+          <div class="card-body">
+            <h5 class="card-title">FUEL MONITORING SYSTEM(IoT)</h5>
+            <p>Tracked fuel levels, theft/leakage detection, mobile integration.</p>
+            <a href="https://github.com/viswa17866/Fuel-monitoring-project" target="_blank" class="btn btn-sm btn-dark">
+              <i class="bi bi-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="flip-right">
+        <div class="card h-100 shadow hover-card">
+          <div class="card-body">
+            <h5 class="card-title">EXPENSE TRACKER(Java Desktop)</h5>
+            <p>Categorized daily expenses with chart visualization.</p>
+             <a href="https://github.com/viswa17866/java-projects-/tree/master/java-projects-/EXPENSE%20TRACKER" target="_blank" class="btn btn-sm btn-dark">
+              <i class="bi bi-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="flip-left">
+        <div class="card h-100 shadow hover-card">
+          <div class="card-body">
+            <h5 class="card-title">HRMS SITE</h5>
+            <p>Built using Flask, MongoDB, Swagger documentation.</p>
+            <a href="https://github.com/kloudping-sathish/MEC_Cloud_Batch1" target="_blank" class="btn btn-sm btn-dark">
+              <i class="bi bi-github"></i> View on GitHub
+            </a>
+          </div>
+        
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="flip-right">
+        <div class="card h-100 shadow hover-card">
+          <div class="card-body">
+            <h5 class="card-title">WISHBOT PRO</h5>
+            <p>WishBot Pro is an AI-powered greeting automation system designed to send personalized wishes (like birthdays, anniversaries, and festive greetings)</p>
+            <a href="https://github.com/viswa17866/auto-message-whatsapp" target="_blank" class="btn btn-sm btn-dark">
+              <i class="bi bi-github"></i> View on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section id="certifications" class="py-5 alt-bg">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4 text-center">Certifications</h2>
+    <ul class="list-group list-group-flush shadow rounded">
+      <li class="list-group-item">Full Stack Web Development Internship (45 days)</li>
+      <li class="list-group-item">Intermediate Java Internship (HTGE Technologies, 1 Month)</li>
+      <li class="list-group-item">Virtual Internship in Embedded Systems (Eduskills, Sep 2024)</li>
+      <li class="list-group-item">NPTEL Cloud Computing (68%)</li>
+      <li class="list-group-item">Google AI Essentials Certificate</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5 text-center">
+  <div class="container" data-aos="zoom-in">
+    <h2 class="mb-4">Contact Me</h2>
+    <p>Email: <a href="mailto:viswasanjay2004@gmail.com">viswasanjay2004@gmail.com</a></p>
+    <p>Phone: +91 6379050572</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com" class="me-3"><i class="bi bi-linkedin fs-3"></i></a>
+      <a href="https://github.com" class="me-3"><i class="bi bi-github fs-3"></i></a>
+      <a href="mailto:viswasanjay2004@gmail.com"><i class="bi bi-envelope fs-3"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center py-3">
+  <p class="mb-0">&copy; 2025 Viswa N | Portfolio</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+
+  // Theme Switcher
+  const themeBtn = document.getElementById("theme-btn");
+  themeBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-theme");
+    themeBtn.innerHTML = document.body.classList.contains("light-theme") 
+      ? '<i class="bi bi-moon"></i>' 
+      : '<i class="bi bi-brightness-high"></i>';
+  });
+</script>
+</body>
+</html>
